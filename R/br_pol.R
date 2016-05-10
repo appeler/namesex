@@ -15,6 +15,9 @@ br_pol <- function(names=NULL) {
 	# Nuke leading and trailing spaces
 	c_names  <- gsub("^ *| *$", "", names)
 
+	# Convert to lower case
+	c_names  <- tolower(c_names)
+
 	# Initialize results df
 	name_sex <- data.frame(names = c_names, p_women=NA)
 
