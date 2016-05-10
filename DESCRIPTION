@@ -7,6 +7,7 @@ Maintainer: Gaurav Sood <gsood07@gmail.com>
 Description: Predict sex of person based on first name.
 Depends:
     R (>= 3.2.5)
+Remotes: soodoku/namesexdata
 License: GPL v3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
