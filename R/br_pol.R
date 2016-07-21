@@ -16,11 +16,8 @@ br_pol <- function(names=NULL, matchAccent = TRUE) {
   # Load brazilian data
   data("brazilian_pols", package = "namesexdata", envir = environment())
   
-	# Nuke leading and trailing spaces
-	c_names  <- gsub("^ *| *$", "", names)
-
-	# Convert to lower case
-	c_names  <- tolower(c_names)
+	# Nuke leading and trailing spaces and upper case
+	c_names  <- clean_names(names, encoding = NULL)
   
 	# Remove accents if matchAccent == FALSE
 	if (!matchAccent) {
