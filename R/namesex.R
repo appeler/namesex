@@ -11,7 +11,7 @@
 #' To learn how to use namesex, see this vignette: \url{vignettes/namesex.html}. 
 #' 
 #' @importFrom utils read.table
-#' @importFrom namesexdata brazilNames
+#' @import namesexdata
 #' @docType package
 #' @author Gaurav Sood and Luke Sonnet
 NULL

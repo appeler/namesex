@@ -4,10 +4,12 @@
 \alias{br_pol}
 \title{Get Sex of Person Based on First Name Using Brazilian Politician Data}
 \usage{
-br_pol(names = NULL)
+br_pol(names = NULL, matchAccent = TRUE)
 }
 \arguments{
 \item{names}{vector of names}
+
+\item{matchAccent}{boolean for whether to match accent. Not matching on accent may be slower.}
 }
 \value{
 data.frame with original list and proportion women with that name
