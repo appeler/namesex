@@ -12,6 +12,8 @@
 #' 
 #' @importFrom utils read.table
 #' @import namesexdata
+#' @import glmnet
+#' @import dummies
 #' @docType package
 #' @author Gaurav Sood and Luke Sonnet
 NULL

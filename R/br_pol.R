@@ -29,9 +29,8 @@ br_pol <- function(names=NULL, matchAccent = TRUE) {
 	# Initialize results df
 	name_sex <- data.frame(names = c_names, pr_women=NA)
 
-	# Match, use mean because there may be multiple matches when
-	# accents are dropped
-	name_sex$pr_women <- sum(brazilian_pols$pr_women[match(c_names, brazilian_pols$first_name)], na.rm = T)
-
+  # Match
+	name_sex$pr_women <- brazilian_pols$pr_women[match(c_names, brazilian_pols$first_name)]
+	
 	name_sex
 }

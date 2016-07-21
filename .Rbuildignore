@@ -3,3 +3,4 @@
 ^.*\appveyor.yml$
 ^\.Rproj\.user$
 ^.*\dev\$
+^data-raw$

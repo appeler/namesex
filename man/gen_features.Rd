@@ -10,13 +10,9 @@ gen_features(names = NULL)
 \item{names}{vector of names}
 }
 \value{
-matrix that is used in our basic ML classification model
+matrix that is used in our basic ML classification model. May be have more columns than the fit model. Make sure to only keep columns found in the model.
 }
 \description{
-Generates features and appropriate data matrix to be used in prediction using existing models. Ignores accents for now.
-}
-\examples{
-br_pol(names="dilma")
-
+Do not use this unless you know exactly what it does. Use the prediction functions instead. Generates features and appropriate data matrix to be used in prediction using existing models. Ignores accents for now.
 }
 
